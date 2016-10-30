@@ -12,14 +12,6 @@ object Main extends App {
 
 package net.siudek {
 
-  class MyBool(x: Boolean) {
-    def and(that: MyBool): MyBool = if (x) that else this
-
-    def or(that: MyBool): MyBool = if (x) this else that
-
-    def negate: MyBool = new MyBool(!x)
-  }
-
   object FizzBuzz {
     def produce(line: String): String = {
       val Array(a, b, c) = line split "\\s+" map (_.toInt)
